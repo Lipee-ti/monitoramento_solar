@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Monitoring System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Solar Energy Monitoring System</h1>
+        <div class="info-box">
+            <div class="data-display">
+                <h2>Current Power Output</h2>
+                <p id="current-power">0 kW</p>
+            </div>
+            <div class="data-display">
+                <h2>Total Energy Generated</h2>
+                <p id="total-energy">0 kWh</p>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="energyChart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
